@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="baseStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/a7740e14d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ------------------------- sidebar -------------------------------------- -->
+
+    <sidebar class="sidebar flex__center scroll">
+      <div class="sidebar-logo">
+        <img src="../assets/logo.png" alt="" />
+      </div>
+      <div class="sidebar-profile">
+        <div class="sidebar-profile-photo">
+          <img src="../assets/user1.jpg" alt="" />
+        </div>
+        <h4>John Doe</h4>
+        <p>Manager</p>
+      </div>
+      <ul class="sidebar-menulist">
+        <li class="sidebar-menuItems">
+          <a href="./index.html" class="sidebar-menuItems-links">
+            <i class="fa-solid fa-desktop"></i>
+            <p>Dashboard</p>
+            <i class="fa-solid fa-plus"></i>
+          </a>
+        </li>
+        <li class="sidebar-menuItems">
+          <a href="#" class="sidebar-menuItems-links">
+            <i class="fa-solid fa-users-line"></i>
+            <p>Employees</p>
+            <i class="fa-solid fa-plus"></i>
+          </a>
+          <ul class="sidebar-submenu">
+            <li><a href="./AllEmployee.html">All Employees</a></li>
+            <li><a href="./AddEmployee.html">Add Employees</a></li>
+            <li><a href="./EditEmployee.html">Edit Employees</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-menuItems">
+          <a href="#" class="sidebar-menuItems-links">
+            <i class="fa-solid fa-bars-progress"></i>
+            <p>Project</p>
+            <i class="fa-solid fa-plus"></i>
+          </a>
+          <ul class="sidebar-submenu">
+            <li><a href="#">All Projects</a></li>
+            <li><a href="./AddProject.html">Add Project</a></li>
+            <li><a href="./EditProject.html">Edit Project</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-menuItems">
+          <a href="#" class="sidebar-menuItems-links">
+            <i class="fa-solid fa-file"></i>
+            <p>Attendance</p>
+            <i class="fa-solid fa-plus"></i>
+          </a>
+          <ul class="sidebar-submenu">
+            <li><a href="./TodayAttend.html">Today's Attendance</a></li>
+            <li><a href="./EmpAttend.html">Emp Attendance</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-menuItems">
+          <a href="#" class="sidebar-menuItems-links">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <p>Leave Management</p>
+            <i class="fa-solid fa-plus"></i>
+          </a>
+          <ul class="sidebar-submenu">
+            <li><a href="./AllLeaveRequest.html">All Leave Request</a></li>
+            <li><a href="./LeaveBalance.html">Leave Balance</a></li>
+            <li><a href="./NewLeaveRequest.html">New Leave Request</a></li>
+            <li><a href="./EditLeaveRequest.html">Edit Leave Request</a></li>
+            <li><a href="./LeaveTypes">Leave Types</a></li>
+          </ul>
+        </li>
+        <li class="sidebar-menuItems">
+          <a href="#" class="sidebar-menuItems-links">
+            <i class="fa-solid fa-building"></i>
+            <p>Department</p>
+            <i class="fa-solid fa-plus"></i>
+          </a>
+          <ul class="sidebar-submenu">
+            <li><a href="./AllDept.html">All Department</a></li>
+            <li><a href="./EditDept.html">Edit Department</a></li>
+          </ul>
+        </li>
+      </ul>
+    </sidebar>
+
+    <!-- ------------------------------ x - sidebar -- x ---------------------------------- -->
+
+    <!-- -------------------------------- navbar ----------------------------------------- -->
+    <nav class="navbar flex__center">
+      <div class="navbar-leftlink">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="navbar-rightlink">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </nav>
+    <!-- -------------------------------- x -- navbar -- x ----------------------------------------- -->
+    <main class="container">
+      <div class="emp-tableContainer">
+        <h5 class="table-heading">All Projects</h5>
+        <table class="main_table">
+          <thead>
+            <tr>
+              <th>Project ID</th>
+              <th>Project Name</th>
+              <th>Client Name</th>
+              <th>Start Date</th>
+              <th>Deadline</th>
+              <th>Technology</th>
+              <th>Team Member</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0001</td>
+              <td>HR Management App</td>
+              <td>John Doe</td>
+              <td>01 Jan 2019</td>
+              <td>01 April 2019</td>
+              <td>React, NodeJs</td>
+              <td>
+                <ul>
+                  <li class="project-avatar">
+                    <img src="../assets/user1.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar">
+                    <img src="../assets/user2.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar">
+                    <img src="../assets/user3.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar additional-badge">
+                    <span>+4</span>
+                  </li>
+                </ul>
+              </td>
+              <td><div class="badge col-orange">Pending</div></td>
+              <td class="action">
+                <a href="./EditProject.html" class="btn btn-tbl-edit"
+                  ><i class="fa-solid fa-pencil"></i
+                ></a>
+                <a href="#" class="btn btn-tbl-delete"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>0001</td>
+              <td>HR Management App</td>
+              <td>John Doe</td>
+              <td>01 Jan 2019</td>
+              <td>01 April 2019</td>
+              <td>React, NodeJs</td>
+              <td>
+                <ul>
+                  <li class="project-avatar">
+                    <img src="../assets/user1.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar">
+                    <img src="../assets/user2.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar">
+                    <img src="../assets/user3.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar additional-badge">
+                    <span>+4</span>
+                  </li>
+                </ul>
+              </td>
+              <td><div class="badge col-green">Active</div></td>
+              <td class="action">
+                <a href="#" class="btn btn-tbl-edit"
+                  ><i class="fa-solid fa-pencil"></i
+                ></a>
+                <a href="#" class="btn btn-tbl-delete"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>0001</td>
+              <td>HR Management App</td>
+              <td>John Doe</td>
+              <td>01 Jan 2019</td>
+              <td>01 April 2019</td>
+              <td>React, NodeJs</td>
+              <td>
+                <ul>
+                  <li class="project-avatar">
+                    <img src="../assets/user1.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar">
+                    <img src="../assets/user2.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar">
+                    <img src="../assets/user3.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar additional-badge">
+                    <span>+4</span>
+                  </li>
+                </ul>
+              </td>
+              <td><div class="badge col-red">Closed</div></td>
+              <td class="action">
+                <a href="#" class="btn btn-tbl-edit"
+                  ><i class="fa-solid fa-pencil"></i
+                ></a>
+                <a href="#" class="btn btn-tbl-delete"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>0001</td>
+              <td>HR Management App</td>
+              <td>John Doe</td>
+              <td>01 Jan 2019</td>
+              <td>01 April 2019</td>
+              <td>React, NodeJs</td>
+              <td>
+                <ul>
+                  <li class="project-avatar">
+                    <img src="../assets/user1.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar">
+                    <img src="../assets/user2.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar">
+                    <img src="../assets/user3.jpg" alt="" />
+                  </li>
+                  <li class="project-avatar additional-badge">
+                    <span>+4</span>
+                  </li>
+                </ul>
+              </td>
+              <td><div class="badge col-orange">Pending</div></td>
+              <td class="action">
+                <a href="#" class="btn btn-tbl-edit"
+                  ><i class="fa-solid fa-pencil"></i
+                ></a>
+                <a href="#" class="btn btn-tbl-delete"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script>
+      require("./renderer.js");
+    </script>
+    <script type="text/javascript">
+      window.$ = window.jQuery = require("jquery");
+      $(document).ready(function () {
+        $(".sidebar-menuItems-links").click(function () {
+          $(this).next(".sidebar-submenu").slideToggle();
+          $(this).find(".fa-plus").toggleClass("rotate");
+        });
+      });
+    </script>
+  </body>
+</html>

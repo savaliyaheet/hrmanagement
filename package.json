@@ -1,0 +1,17 @@
+{
+  "name": "hrmanagement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.1.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
