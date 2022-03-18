@@ -6,6 +6,8 @@ const url = require("url");
 let win;
 
 app.on("ready", () => {
+
+  //Creating New Brower Window
   win = new BrowserWindow({
     width: 1440,
     height: 1024,

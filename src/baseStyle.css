@@ -203,7 +203,7 @@ th {
   font-family: var(--font-poppins);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 27px;
   color: var(--font-color);
 }
@@ -213,7 +213,7 @@ td {
   font-family: var(--font-poppins);
   font-style: normal;
   font-weight: 350;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
   color: var(--color-dark);
 }
@@ -245,14 +245,17 @@ tbody tr:hover {
   text-transform: none;
   font-weight: 600;
   border-radius: 50% !important;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #fff;
   box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.1) !important;
+}
+.btn i {
+  font-size: 14px;
 }
 .btn-tbl-edit {
   background-color: var(--color-success);
@@ -264,9 +267,7 @@ tbody tr:hover {
 .btn-tbl-delete {
   background-color: var(--color-danger);
 }
-.btn i {
-  font-size: 16px;
-}
+
 /* --------------------------------------- X - Add Employee - X ----------------------------------------- */
 
 /* ------------------------------------- Add Project ------------------------------------------------- */
@@ -275,7 +276,7 @@ tbody tr:hover {
   border: 1px solid;
   padding: 5px 8px;
   border-radius: 4px;
-  line-height: 18px;
+  line-height: 12px;
   font-weight: 400;
 }
 .col-orange {
@@ -422,4 +423,40 @@ tbody tr:hover {
   font-weight: 300;
   font-size: 16px;
   line-height: 27px;
+}
+
+/* ------------------------------------------ Employee Attendance Page ------------------------------- */
+.attend-option-container {
+  width: 100%;
+  background: var(--color-purewhite);
+  margin-bottom: 20px;
+  min-height: 50px;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.p-l-20 {
+  padding-left: 20px;
+}
+.attend-option-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 0;
+}
+.nav-item a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #655858;
+  padding: 5px 10px;
+}
+.tab-all a.active {
+  background: #e31bab;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  color: var(--color-purewhite);
+  transition: color 0.1s cubic-bezier(0.79, 0.33, 0, 0.01),
+    background-color 0.1s cubic-bezier(0.79, 0.33, 0, 0.01);
 }

@@ -57,7 +57,7 @@
             <i class="fa-solid fa-plus"></i>
           </a>
           <ul class="sidebar-submenu">
-            <li><a href="./AllProject.html">All Projects</a></li>
+            <li><a href="./AllProject.html">All Proejcts</a></li>
             <li><a href="./AddProject.html">Add Project</a></li>
             <li><a href="./EditProject.html">Edit Project</a></li>
           </ul>
@@ -70,7 +70,7 @@
           </a>
           <ul class="sidebar-submenu">
             <li><a href="./TodayAttend.html">Today's Attendance</a></li>
-            <li><a href="./EmpAttend.html">Emp Attendance</a></li>
+            <li><a href="#">Emp Attendance</a></li>
           </ul>
         </li>
         <li class="sidebar-menuItems">
@@ -83,7 +83,7 @@
             <li><a href="./AllLeaveRequest.html">All Leave Request</a></li>
             <li><a href="./LeaveBalance.html">Leave Balance</a></li>
             <li><a href="./NewLeaveRequest.html">New Leave Request</a></li>
-            <li><a href="#">Edit Leave Request</a></li>
+            <li><a href="./EditLeaveRequest.html">Edit Leave Request</a></li>
             <li><a href="./LeaveTypes">Leave Types</a></li>
           </ul>
         </li>
@@ -116,57 +116,112 @@
     </nav>
     <!-- -------------------------------- x -- navbar -- x ----------------------------------------- -->
     <main class="container">
-      <div class="main-tableContainer addForm-container">
-        <h5 class="table-heading">Edit Leave Request</h5>
-        <form class="addForm">
-          <div class="form-row">
-            <div class="input-wrapper">
-              <label for="empName">Employee Name:</label>
-              <input type="text" name="empName" placeholder="firstName" value="John"/>
-              <input type="text" name="empName" placeholder="lastName" value="Doe"/>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="input-wrapper">
-              <label for="empID">Employee ID:</label>
-              <input type="number" name="empID" id="" value="0001"/>
-            </div>
-            <div class="input-wrapper">
-              <label for="leaveType">Leave Type:</label>
-              <select name="" id="" value="maternity">
-                  <option value="casual">Casual Leave</option>
-                  <option value="maternity" selected>Maternity Leave</option>
-                  <option value="sick">Sick Leave</option>
-                  <option value="privilege">Privilege Leave</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="input-wrapper">
-              <label for="fromDate">From Date:</label>
-              <input type="date" name="fromDate" id="" />
-            </div>
-            <div class="input-wrapper">
-              <label for="toDate">To Date:</label>
-              <input type="date" name="endDto" id=""/>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="input-wrapper">
-              <label for="remarks">Remarks:</label>
-              <input type="text" name="remarks" value="Have a great Leave" />
-            </div>
-          </div>
-          <div class="btn-row">
-            <button type="submit" class="form-btn submitBtn">Submit</button>
-            <button type="submit" class="form-btn cancelBtn">Cancel</button>
-          </div>
-        </form>
+      <div class="attend-option-container">
+        <div class="p-l-20">
+          <ul class="attend-option-nav">
+            <li class="nav-item tab-all" id="attendance">
+              <a href="#" class="nav-link show active">Attendance</a>
+            </li>
+            <li class="nav-item tab-all p-l-20" id="report">
+              <a href="#" class="nav-link">Report</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="emp-tableContainer">
+        <h5 class="table-heading">
+          Today's Attendance <span>Date: 14 Feb 2020</span>
+        </h5>
+        <table class="main_table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Emp ID</th>
+              <th>Employee Name</th>
+              <th>Department</th>
+              <th>Check IN</th>
+              <th>Check OUT</th>
+              <th>Shift</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="../assets/user3.jpg" alt="" class="row_profileImg" />
+              </td>
+              <td>0003</td>
+              <td>Elysee Perry</td>
+              <td>Development</td>
+              <td>-</td>
+              <td>-</td>
+              <td>Shift 1</td>
+              <td><div class="badge col-red">Absent</div></td>
+              <td class="action">
+                <a href="#" class="btn btn-tbl-edit"
+                  ><i class="fa-solid fa-pencil"></i
+                ></a>
+                <a href="#" class="btn btn-tbl-delete"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../assets/user3.jpg" alt="" class="row_profileImg" />
+              </td>
+              <td>0003</td>
+              <td>Elysee Perry</td>
+              <td>Development</td>
+              <td class="col-green">10:28</td>
+              <td class="col-green">-</td>
+              <td>Shift 1</td>
+              <td><div class="badge col-green">Present</div></td>
+              <td class="action">
+                <a href="#" class="btn btn-tbl-edit"
+                  ><i class="fa-solid fa-pencil"></i
+                ></a>
+                <a href="#" class="btn btn-tbl-delete"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../assets/user3.jpg" alt="" class="row_profileImg" />
+              </td>
+              <td>0003</td>
+              <td>Elysee Perry</td>
+              <td>Development</td>
+              <td class="col-red">10:40</td>
+              <td class="col-red">-</td>
+              <td>Shift 1</td>
+              <td><div class="badge col-green">Present</div></td>
+              <td class="action">
+                <a href="#" class="btn btn-tbl-edit"
+                  ><i class="fa-solid fa-pencil"></i
+                ></a>
+                <a href="#" class="btn btn-tbl-delete"
+                  ><i class="fa-solid fa-trash"></i
+                ></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
-
     <script>
-      require("./renderer.js");
+      const attendance = document.getElementById("attendance");
+      const report = document.getElementById("report")
+      attendance.addEventListener("click", () => {
+        attendance.firstElementChild.classList.add("active");
+        report.firstElementChild.classList.remove("active")
+      });
+      report.addEventListener("click", () =>{
+          report.firstElementChild.classList.add("active");
+          attendance.firstElementChild.classList.remove("active")
+      })
     </script>
     <script type="text/javascript">
       window.$ = window.jQuery = require("jquery");
