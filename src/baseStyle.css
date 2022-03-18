@@ -113,6 +113,9 @@ body {
 .sidebar-menuItems a:hover {
   background: var(--color-lightest);
 }
+.sidebar-menuItems a:focus {
+   outline: none;
+}
 .sidebar-menuItems p {
   flex: 1;
   align-items: center;
@@ -241,21 +244,26 @@ tbody tr:hover {
   background: var(--color-purewhite);
   border-radius: 10px;
 }
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
 .btn {
   text-transform: none;
   font-weight: 600;
   border-radius: 50% !important;
   width: 24px;
   height: 24px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   color: #fff;
   box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.1) !important;
 }
 .btn i {
-  font-size: 14px;
+  font-size: 12px;
 }
 .btn-tbl-edit {
   background-color: var(--color-success);
