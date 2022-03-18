@@ -120,7 +120,7 @@
         <div class="p-l-20">
           <ul class="attend-option-nav">
             <li class="nav-item tab-all" id="attendance">
-              <a href="#" class="nav-link show active">Attendance</a>
+              <a href="#" class="nav-link active">Attendance</a>
             </li>
             <li class="nav-item tab-all p-l-20" id="report">
               <a href="#" class="nav-link">Report</a>
@@ -128,84 +128,107 @@
           </ul>
         </div>
       </div>
+      <div class="profile-container" id="#attendance">
+        <div class="attend-profile-wrapper p-l-20">
+          <div class="profile-image">
+            <img src="../assets/user10.jpg" alt="" />
+          </div>
+          <div class="profile-details">
+            <p class="profile-details-bold">Maria Smith</p>
+            <p class="profile-details-light">Software Developer</p>
+          </div>
+          <div class="profile-details">
+            <p class="profile-details-bold">Employee ID</p>
+            <p class="profile-details-light">1001F11ADF</p>
+          </div>
+          <div class="profile-details">
+            <p class="profile-details-bold">Joining Date</p>
+            <p class="profile-details-light">18 March 2019</p>
+          </div>
+          <div class="profile-details">
+            <p class="profile-details-bold">Department</p>
+            <p class="profile-details-light">Development</p>
+          </div>
+        </div>
+      </div>
       <div class="emp-tableContainer">
-        <h5 class="table-heading">
-          Today's Attendance <span>Date: 14 Feb 2020</span>
-        </h5>
+        <div class="attendance-time">
+          <div>
+            <h3 class="attendance-details-bold">8:00</h3>
+            <p class="attendance-details-light">Average Working Hours</p>
+          </div>
+          <div>
+            <h3 class="attendance-details-bold">10:30 AM</h3>
+            <p class="attendance-details-light">Average IN Time</p>
+          </div>
+          <div>
+            <h3 class="attendance-details-bold">7:30 PM</h3>
+            <p class="attendance-details-light">Average OUT Time</p>
+          </div>
+          <div>
+            <h3 class="attendance-details-bold">1:00</h3>
+            <p class="attendance-details-light">Average Break Time</p>
+          </div>
+        </div>
         <table class="main_table">
           <thead>
             <tr>
-              <th>#</th>
-              <th>Emp ID</th>
-              <th>Employee Name</th>
-              <th>Department</th>
+              <th>Date</th>
               <th>Check IN</th>
               <th>Check OUT</th>
-              <th>Shift</th>
+              <th>Working Hours</th>
               <th>Status</th>
-              <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>
-                <img src="../assets/user3.jpg" alt="" class="row_profileImg" />
-              </td>
-              <td>0003</td>
-              <td>Elysee Perry</td>
-              <td>Development</td>
-              <td>-</td>
-              <td>-</td>
-              <td>Shift 1</td>
-              <td><div class="badge col-red">Absent</div></td>
-              <td class="action">
-                <a href="#" class="btn btn-tbl-edit"
-                  ><i class="fa-solid fa-pencil"></i
-                ></a>
-                <a href="#" class="btn btn-tbl-delete"
-                  ><i class="fa-solid fa-trash"></i
-                ></a>
-              </td>
+              <td>03/02/2022</td>
+              <td class="col-green">10:30</td>
+              <td class="col-green">7:32</td>
+              <td class="col-green">08:02</td>
+              <td><div class="badge col-green">Present</div></td>
             </tr>
             <tr>
-              <td>
-                <img src="../assets/user3.jpg" alt="" class="row_profileImg" />
-              </td>
-              <td>0003</td>
-              <td>Elysee Perry</td>
-              <td>Development</td>
-              <td class="col-green">10:28</td>
+              <td>04/02/2022</td>
               <td class="col-green">-</td>
-              <td>Shift 1</td>
-              <td><div class="badge col-green">Present</div></td>
-              <td class="action">
-                <a href="#" class="btn btn-tbl-edit"
-                  ><i class="fa-solid fa-pencil"></i
-                ></a>
-                <a href="#" class="btn btn-tbl-delete"
-                  ><i class="fa-solid fa-trash"></i
-                ></a>
-              </td>
+              <td class="col-green">-</td>
+              <td class="col-green">-</td>
+              <td><div class="badge col-red">Absent</div></td>
             </tr>
             <tr>
-              <td>
-                <img src="../assets/user3.jpg" alt="" class="row_profileImg" />
-              </td>
-              <td>0003</td>
-              <td>Elysee Perry</td>
-              <td>Development</td>
+              <td>05/02/2022</td>
               <td class="col-red">10:40</td>
-              <td class="col-red">-</td>
-              <td>Shift 1</td>
+              <td class="col-red">7:20</td>
+              <td class="col-red">07:40</td>
               <td><div class="badge col-green">Present</div></td>
-              <td class="action">
-                <a href="#" class="btn btn-tbl-edit"
-                  ><i class="fa-solid fa-pencil"></i
-                ></a>
-                <a href="#" class="btn btn-tbl-delete"
-                  ><i class="fa-solid fa-trash"></i
-                ></a>
-              </td>
+            </tr>
+            <tr>
+              <td>06/02/2022</td>
+              <td class="col-red">10:30</td>
+              <td class="col-red">7:32</td>
+              <td class="col-red">08:02</td>
+              <td><div class="badge col-green">Present</div></td>
+            </tr>
+            <tr>
+              <td>07/02/2022</td>
+              <td class="col-green">10:30</td>
+              <td class="col-green">7:32</td>
+              <td class="col-green">08:02</td>
+              <td><div class="badge col-green">Present</div></td>
+            </tr>
+            <tr>
+              <td>08/02/2022</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td><div class="badge col-blue">Weekend</div></td>
+            </tr>
+            <tr>
+              <td>09/02/2022</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td><div class="badge col-blue">Weekend</div></td>
             </tr>
           </tbody>
         </table>
@@ -213,15 +236,17 @@
     </main>
     <script>
       const attendance = document.getElementById("attendance");
-      const report = document.getElementById("report")
+      const report = document.getElementById("report");
+      const empab = document.querySelector(".emp-tableContainer");
       attendance.addEventListener("click", () => {
         attendance.firstElementChild.classList.add("active");
-        report.firstElementChild.classList.remove("active")
+        report.firstElementChild.classList.remove("active");
+        // empab.classList.remove("hide");
       });
-      report.addEventListener("click", () =>{
-          report.firstElementChild.classList.add("active");
-          attendance.firstElementChild.classList.remove("active")
-      })
+      report.addEventListener("click", () => {
+        report.firstElementChild.classList.add("active");
+        attendance.firstElementChild.classList.remove("active");
+      });
     </script>
     <script type="text/javascript">
       window.$ = window.jQuery = require("jquery");
